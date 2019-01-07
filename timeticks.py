@@ -3,8 +3,7 @@
 import datetime, time, subprocess, re, sys, getopt
 
 def usage():
-   print("Syntax invalid.\n\
-")
+   print("usage: python timeticks.py [--help] [-c <community>] [-i <ipaddr>] [-o <oid>]")
 
 try: 
    opts, args = getopt.getopt(sys.argv[1:], 'hc:i:o:', ['help', 'community=', 'ipaddr=', 'oid='])
